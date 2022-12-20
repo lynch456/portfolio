@@ -1,0 +1,421 @@
+@media screen and (max-width: 768px) {
+  #home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #title-text_box {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  @keyframes boxLine {
+    from {
+      background-image: linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      background-size: 2px 100%, 0% 2px, 0% 2px, 2px 100%;
+      background-position: top left, left top, right bottom, bottom right;
+    }
+    to {
+      background-image: linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      background-size: 2px 0%, 100% 2px, 100% 2px, 2px 0%;
+      background-position: top left, left top, right bottom, bottom right;
+      opacity: 1;
+    }
+  }
+  .title-text_box_animation {
+    animation: boxLine 1.3s ease-in-out forwards;
+  }
+
+  #title-text_box h1 {
+    font-size: 22px;
+    padding: 60px;
+  }
+  #title-text_box span {
+    font-size: 12px;
+  }
+
+  #project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .project-item {
+    width: 200px;
+    height: 300px;
+    opacity: 0;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .skill img {
+    width: 15px;
+  }
+  .cover a img {
+    width: 15px;
+  }
+
+  .project-item:hover:not(#contact) .cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  .project-item span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  #pizzahut {
+    background-image: url("../image/pizzahut.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #freewill {
+    background-image: url("../image/freewill.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #monami {
+    background-image: url("../image//monami.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #naver {
+    background-image: url("../image/naver-kin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #asty {
+    background-image: url("../image/asty.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact span {
+    font-size: 13px;
+  }
+  #title {
+    padding: 50px 0 10px 0;
+  }
+  #title::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto;
+  }
+  #contact-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #name {
+    margin: 20px 0;
+  }
+  .mail,
+  .phone {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .mail img,
+  .phone img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .mail span,
+  .phone span {
+    width: 100%;
+  }
+  #contact a img {
+    width: 20px;
+  }
+  .skill {
+    margin-top: 10px;
+  }
+  .skill img {
+    width: 23px;
+    margin: 0 5px;
+  }
+  .link {
+    display: flex;
+    margin-top: 20px;
+  }
+  .link a {
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 5px;
+  }
+  .link a img {
+    width: 15px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #title-text_box {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  @keyframes boxLine {
+    from {
+      background-image: linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      background-size: 2px 100%, 0% 2px, 0% 2px, 2px 100%;
+      background-position: top left, left top, right bottom, bottom right;
+    }
+    to {
+      background-image: linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+        linear-gradient(#000000, #000000);
+      background-repeat: no-repeat;
+      background-size: 2px 0%, 100% 2px, 100% 2px, 2px 0%;
+      background-position: top left, left top, right bottom, bottom right;
+      opacity: 1;
+    }
+  }
+  .title-text_box_animation {
+    animation: boxLine 1.3s ease-in-out forwards;
+  }
+
+  #title-text_box h1 {
+    font-size: 22px;
+    padding: 60px;
+  }
+  #title-text_box span {
+    font-size: 12px;
+  }
+
+  #project {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .project-item {
+    width: 200px;
+    height: 300px;
+    opacity: 0;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .skill img {
+    width: 30px;
+  }
+  .cover a img {
+    width: 30px;
+  }
+
+  .project-item:hover:not(#contact) .cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .project-item span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #pizzahut {
+    background-image: url("../image/pizzahut.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #freewill {
+    background-image: url("../image/freewill.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #monami {
+    background-image: url("../image//monami.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #naver {
+    background-image: url("../image/naver-kin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #asty {
+    background-image: url("../image/asty.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact span {
+    font-size: 13px;
+  }
+  #title {
+    padding: 50px 0 10px 0;
+  }
+  #title::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto;
+  }
+  #contact-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #name {
+    margin: 20px 0;
+  }
+  .mail,
+  .phone {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .mail img,
+  .phone img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .mail span,
+  .phone span {
+    width: 100%;
+  }
+  #contact a img {
+    width: 20px;
+  }
+  .skill {
+    margin-top: 10px;
+  }
+  .skill img {
+    width: 20px;
+    margin: 0 5px;
+  }
+  .link {
+    display: flex;
+    margin-top: 20px;
+  }
+  .link a {
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 5px;
+  }
+  .link a img {
+    width: 20px;
+    padding: 10px;
+  }
+}

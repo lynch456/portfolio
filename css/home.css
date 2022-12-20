@@ -1,0 +1,53 @@
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#title-text_box {
+  width: 200px;
+  height: 180px;
+  padding: 80px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+@keyframes boxLine {
+  from {
+    background-image: linear-gradient(#000000, #000000),
+      linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+      linear-gradient(#000000, #000000);
+    background-repeat: no-repeat;
+    background-size: 2px 100%, 0% 2px, 0% 2px, 2px 100%;
+    background-position: top left, left top, right bottom, bottom right;
+  }
+  to {
+    background-image: linear-gradient(#000000, #000000),
+      linear-gradient(#000000, #000000), linear-gradient(#000000, #000000),
+      linear-gradient(#000000, #000000);
+    background-repeat: no-repeat;
+    background-size: 2px 0%, 100% 2px, 100% 2px, 2px 0%;
+    background-position: top left, left top, right bottom, bottom right;
+    opacity: 1;
+  }
+}
+.title-text_box_animation {
+  animation: boxLine 1.3s ease-in-out forwards;
+}
+
+#title-text_box h1 {
+  font-size: 42px;
+  padding: 120px;
+}
+#title-text_box span {
+  font-size: 14px;
+}

@@ -1,0 +1,160 @@
+#project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-inner {
+  max-width: 1400px;
+  width: 100%;
+  padding: 10px 80px;
+  display: flex;
+  justify-content: center;
+}
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.project-item {
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  position: relative;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill img {
+  width: 30px;
+}
+.cover a img {
+  width: 30px;
+}
+
+.project-item:hover:not(#contact) .cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.project-item span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+}
+#pizzahut {
+  background-image: url("../image/pizzahut.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#freewill {
+  background-image: url("../image/freewill.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#monami {
+  background-image: url("../image//monami.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#naver {
+  background-image: url("../image/naver-kin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#asty {
+  background-image: url("../image/asty.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact span {
+  color: #000;
+}
+#title {
+  padding: 50px 0 10px 0;
+}
+#title::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin: 10px auto;
+}
+#contact-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+#name {
+  margin: 20px 0;
+}
+.mail,
+.phone {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.mail img,
+.phone img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.mail span,
+.phone span {
+  width: 100%;
+}
+#contact a img {
+  width: 30px;
+}
+.skill {
+  margin-top: 10px;
+}
+.skill img {
+  width: 35px;
+  margin: 0 5px;
+}
+.link {
+  display: flex;
+  margin-top: 20px;
+}
+.link a {
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 0 5px;
+}
+.link a img {
+  width: 25px;
+  padding: 10px;
+}
