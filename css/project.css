@@ -52,10 +52,14 @@
   transition: all 0.3s;
 }
 
-.project-item span {
+.project-item span:not(.type) {
   color: #fff;
   font-weight: 600;
   font-size: 22px;
+}
+.type {
+  font-size: 16px;
+  color: #f3f3f3;
 }
 #pizzahut {
   background-image: url("../image/pizzahut.png");
