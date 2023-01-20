@@ -51,7 +51,6 @@
   opacity: 1;
   transition: all 0.3s;
 }
-
 .project-item span:not(.type) {
   color: #fff;
   font-weight: 600;
