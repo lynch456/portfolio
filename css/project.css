@@ -90,55 +90,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#contact span {
-  color: #000;
-}
-#title {
-  padding: 50px 0 10px 0;
-}
-#title::after {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #000;
-  display: block;
-  margin: 10px auto;
-}
-#contact-inner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-#name {
-  margin: 20px 0;
-}
-.mail,
-.phone {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-}
-.mail img,
-.phone img {
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
-}
-.mail span,
-.phone span {
-  width: 100%;
-}
-#contact a img {
-  width: 30px;
+#monami {
+  background-image: url("../image/monami.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .skill {
   margin-top: 10px;
